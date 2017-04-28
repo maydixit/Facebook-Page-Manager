@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.may.facebook_page_manager.LoginActivity"
+    android:weightSum="1"
+    android:background="@drawable/layout_bg"
+    android:id="@+id/relative_layout_login_page"
+    >
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/com_facebook_loginview_default_style"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="@string/login_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_page_text"
+        android:layout_weight="0.16"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-smallcaps" />
+
+</RelativeLayout>
